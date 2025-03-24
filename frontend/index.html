@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adalicious - Commandes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="welcome-screen">
+            <h1>Bienvenue sur Adalicious</h1>
+            <p>Pour commencer, peux-tu me donner ton prénom :</p>
+            <input type="text" id="username" placeholder="Ton prénom">
+            <button onclick="commencerCommande()">Valider</button>
+        </div>
+        
+        <div id="menu-screen" style="display:none;">
+            <h2>Bonjour <span id="user-name"></span>, voici notre menu :</h2>
+            <div id="menu"></div>
+        </div>
+
+        <div id="order-status" style="display:none;">
+            <h2>Merci pour ta commande, <span id="user-order-name"></span>!</h2>
+            <p>Suivi :</p>
+            <div id="status-container">En attente...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
